@@ -1,4 +1,6 @@
 import { Component, ElementRef, EventEmitter, Output } from '@angular/core';
+import { ScrollService } from '../shared-components/scroll.service';
+
 
 @Component({
   selector: 'app-header',
@@ -8,8 +10,14 @@ import { Component, ElementRef, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
   filterText: string = '';
   @Output() filterTextChanged = new EventEmitter<string>();
+  constructor(private scrollService: ScrollService) {}
+
+  scrollTo(targetId: string) {
+    this.scrollService.scrollTo(targetId);
+  }
 
   onFilterTextChange() {
     this.filterTextChanged.emit(this.filterText);
   }
 }
+

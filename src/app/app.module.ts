@@ -13,7 +13,6 @@ import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchFilterPipe } from './shared-components/search-filter.pipe';
-import { ScrollToDirectiveComponent } from './shared-components/scroll-to.directive/scroll-to.directive.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { ScrollToDirectiveComponent } from './shared-components/scroll-to.direct
     CaseStudiesComponent,
     WhatWeDoComponent,
     AppLayoutComponent,
-    SearchFilterPipe,
-    ScrollToDirectiveComponent
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,

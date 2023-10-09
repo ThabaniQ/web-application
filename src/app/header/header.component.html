@@ -8,24 +8,17 @@
     </div>
     <div class="NavbarMenu">
       <div class="BtnPrimary">
-        <a fragment="what-we-do" class="ButtonNav">Services</a>
+        <a (click)="scrollTo('whatWeDoSection')" class="ButtonNav">Services</a>
       </div>
       <div class="BtnPrimary">
-        <a fragment="brandsSection" class="ButtonNav">Industries</a>
+        <a (click)="scrollTo('brandsSection')" class="ButtonNav">Industries</a>
       </div>
       <div class="BtnPrimary">
-        <a fragment="caseStudiesSection" class="ButtonNav">Cases</a>
+        <a (click)="scrollTo('caseStudiesSection')" class="ButtonNav">Cases</a>
       </div>
       <div class="BtnPrimary">
-        <a fragment="ContactUsSection" class="ButtonNav">Contact Us</a>
+        <a (click)="scrollTo('ContactUsSection')" class="ButtonNav">Contact Us</a>
       </div>
-      <form>
-        <div class="FilterInput">
-          <input type="text" placeholder="Filter by brand name" (input)="onFilterTextChange()">
-
-        </div>
-        
-      </form>
     </div>
     <div class="BtnPrimary">
       <div class="Button">Let’s Talk</div>
