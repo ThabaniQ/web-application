@@ -1,0 +1,13 @@
+<div id="brandsSection" class="BrandsBottomRow">
+  <div class="HeadingTag">
+    <div class="Rectangle1"></div>
+    <div class="YouLlBeInGoodCompany">You’ll be in good company</div>
+  </div>
+  <div class="TrustedByLeadingBrands">Trusted by leading brands</div>
+  <div class="BrandsGrid">
+    <div *ngFor="let brand of brands" class="BrandItem">
+      <h2>{{ brand.name }}</h2>
+      <div [innerHTML]="brand.svgImage"></div>
+    </div>
+  </div>
+</div>

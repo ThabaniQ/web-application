@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'web-application';
+  imagePath = 'assets/images/bbc-black.svg';
 }

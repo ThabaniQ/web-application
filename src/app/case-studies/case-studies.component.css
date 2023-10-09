@@ -1,0 +1,117 @@
+/* Base Styles */
+.CaseStudies {
+    width: 100%;
+    max-width: 1279px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .CaseStudiesText{
+    left: 5%;
+    top: 0;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+  }
+  .LoremIpsumDolorSitAmetConsecteturAdipiscingElitPhasellusNecIaculisMauris {
+    align-self: stretch;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  
+  .CardSquare {
+    width: calc(33.33% - 20px);
+    height: 399px;
+    background: white;
+    box-shadow: 0px 8px 16px rgba(54, 54, 54, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .CardImage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: stretch;
+    flex: 1 1 0;
+  }
+  
+  .X960 {
+    align-self: stretch;
+    flex: 1 1 0;
+  }
+  
+  .CardContent {
+    height: 170px;
+    padding: 24px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.64) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .Rectangle1 {
+    width: 40px;
+    height: 4px;
+    background: #D100C9;
+  }
+  
+  .RectangleHeader{
+    width: 40px;
+    height: 4px;
+    left: 0;
+    top: 10px;
+    position: absolute;
+    background: #D100C9;
+  }
+  
+  .CardTitle {
+    color: white;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 38.40px;
+    word-wrap: break-word;
+  }
+  
+  .LoremIpsum {
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  .spacing {
+    position: relative;
+    margin: 5% 50px;
+  }
+
+  .Heading {
+    height: 50px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .CardSquare {
+      width: 100%;
+    }
+  }
+  

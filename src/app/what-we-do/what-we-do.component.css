@@ -1,0 +1,88 @@
+/* Base Styles */
+.WhatWeDo {
+    position: relative;
+    margin: 5% 50px;
+  }
+  .HeadingTag {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+  .SectionTitle {
+    left: 5%;
+    top: 0;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+  }
+  
+  .Rectangle1 {
+    width: 40px;
+    height: 4px;
+    left: 0;
+    top: 10px;
+    position: absolute;
+    background: #D100C9;
+  }
+  
+  .ContentWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .ServiceItem {
+    flex-basis: calc(33.33% - 20px);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .ServiceIcon {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .ServiceTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.80px;
+    margin-top: 20px;
+    color: black;
+  }
+  
+  .ServiceDescription {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+    margin-top: 20px;
+  }
+  
+  .Masterpieces {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 67.20px;
+    color: #242424;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .ContentWrapper {
+      flex-direction: column;
+    }
+  
+    .ServiceItem {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,95 @@
+
+.Menu {
+    position: relative;
+    background: #70259B;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  }
+  
+  .Navbar {
+    max-width: 1280px;
+    margin: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: inherit;
+  }
+  
+  .Logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Logo .Vector,
+  .Logo .Brand {
+    background: white;
+  }
+  
+  .NavbarMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .BtnPrimary {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ButtonNav {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background: #70259B;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 21px;
+    word-wrap: break-word;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  /* Style for the BtnPrimary container */
+
+/* Style for the Button container */
+.Button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+/* Style for the ButtonContent (text) */
+.ButtonContent {
+  color: #70259B;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+
+  @media screen and (max-width: 768px) {
+    .Navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .NavbarMenu {
+      margin-top: 20px;
+    }
+  
+    .BtnPrimary {
+      margin-top: 10px;
+    }
+  }
+  
