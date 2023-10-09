@@ -1,4 +1,3 @@
-/* Base Styles */
 .CaseStudies {
     width: 100%;
     max-width: 1279px;
@@ -101,14 +100,13 @@
   }
   .spacing {
     position: relative;
-    margin: 5% 50px;
+    margin: 5% 5%;
   }
 
   .Heading {
     height: 50px;
   }
   
-  /* Responsive Styles */
   @media screen and (max-width: 768px) {
     .CardSquare {
       width: 100%;

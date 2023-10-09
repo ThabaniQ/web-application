@@ -1,7 +1,6 @@
-/* Base Styles */
 .WhatWeDo {
     position: relative;
-    margin: 5% 50px;
+    margin: 5% 5%;
   }
   .HeadingTag {
     width: 100%;
@@ -73,8 +72,7 @@
     color: #242424;
     margin-top: 40px;
   }
-  
-  /* Responsive Styles */
+   
   @media screen and (max-width: 768px) {
     .ContentWrapper {
       flex-direction: column;

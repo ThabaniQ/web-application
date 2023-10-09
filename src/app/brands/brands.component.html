@@ -4,8 +4,16 @@
     <div class="YouLlBeInGoodCompany">You’ll be in good company</div>
   </div>
   <div class="TrustedByLeadingBrands">Trusted by leading brands</div>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search..."
+      [(ngModel)]="searchText"
+    />
+  </div>
   <div class="BrandsGrid">
-    <div *ngFor="let brand of brands" class="BrandItem">
+    <div *ngFor="let brand of brands | searchFilter: searchText" class="BrandItem">
       <h2>{{ brand.name }}</h2>
       <div [innerHTML]="brand.svgImage"></div>
     </div>

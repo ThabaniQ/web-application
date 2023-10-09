@@ -12,6 +12,8 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './shared-components/search-filter.pipe';
+import { ScrollToDirectiveComponent } from './shared-components/scroll-to.directive/scroll-to.directive.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeroComponent,
     CaseStudiesComponent,
     WhatWeDoComponent,
-    AppLayoutComponent
+    AppLayoutComponent,
+    SearchFilterPipe,
+    ScrollToDirectiveComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

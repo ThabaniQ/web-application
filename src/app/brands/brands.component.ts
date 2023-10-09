@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class BrandsComponent implements OnInit {
   brands: any[] = [];
-  filterText: string = ''; // Define the filterText property here
+  searchText: string = ''; 
 
   constructor(private apiService: ApiService, private sanitizer: DomSanitizer) {}
 
@@ -25,14 +25,14 @@ export class BrandsComponent implements OnInit {
     });
   }
 
-  // Define the filtering logic here
+
   filterBrands() {
-    if (!this.filterText) {
-      return this.brands; // No filter text, return all brands
+    if (!this.searchText) {
+      return this.brands; 
     }
 
     return this.brands.filter(brand =>
-      brand.brandName.toLowerCase().includes(this.filterText.toLowerCase())
+      brand.brandName.toLowerCase().includes(this.searchText.toLowerCase())
     );
   }
 }
