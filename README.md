@@ -2,26 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
+## Build
+Run ng install to get the dependecy
+Run `ng build` to build the project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Connection
 
-## Build
+This project connects to an API to retrieve and display brand information. It provides the following features:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Display a list of brands obtained from the API.
+- Search for a brand by name. This search is performed based on data retrieved from the connected database.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Funtionality
+Search brand based on name, this is retrived from the database
